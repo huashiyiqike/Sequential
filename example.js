@@ -1,10 +1,6 @@
 import * as React from 'react';
 import { Component, PropTypes } from 'react';
-import * as _ from 'lodash';
-import { observer } from 'mobx-react';
 import Toast from '../Toast';
-import * as axios from 'axios';
-import * as Util from '../Util';
 import './style.less';
 import Sequential from './Sequential';
 /**
@@ -14,7 +10,6 @@ import Sequential from './Sequential';
  * @class DynamicListCard
  * @extends {Component}
  */
-@observer
 export default class example extends Component {
     constructor(props, context) {
         super(props, context);

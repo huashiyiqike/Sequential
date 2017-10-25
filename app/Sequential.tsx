@@ -22,7 +22,7 @@ export default class Sequential{
         if(this.val instanceof Array){
             this.diff = [];
             for(let i = 0 ; i < this.val.length; i++){
-                this.diff.push( (end[i] - start[i])/(duration/timeDiv) );
+                this.diff.push( (end[i]- start[i])/(duration/timeDiv) );
             }
         }else{
             this.diff = (end-start)/(duration/timeDiv);
